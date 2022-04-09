@@ -1,4 +1,4 @@
-"""The start of bad-megaman"""
+"""The start of something AMAZING."""
 
 
 from matplotlib.pyplot import pause
@@ -13,7 +13,7 @@ from random import randint
 pygame.init()
 
 display = pygame.display.set_mode((600, 600))
-player = Player(400, 400, 328, 328)
+player = Player(400, 400, 50, 50)
 enemy_1 = Falling("game_stuff/assets/Duke_Enemy.png")
 enemy_2 = Falling("game_stuff/assets/ncstate100.png")
 enemy_3 = Falling("game_stuff/assets/demon_deacon.png")
@@ -58,12 +58,12 @@ while True:
     player.draw(display)
 
     enemy_1.draw(display)
-    enemy_1.fall(1, 1)
+    enemy_1.fall(2, 3)
 
     enemy_2.draw(display)
-    enemy_2.go_up(0, -2)
+    enemy_2.go_up(0, -1)
 
     enemy_3.draw(display)
-    enemy_3.fall(0, 1)
+    enemy_3.fall(0, 3)
 
     pygame.display.update()
