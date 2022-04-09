@@ -14,9 +14,16 @@ class Player(pygame.sprite.Sprite):
         # self.movey += 3.2
         # if self.rect.y> >
 
+<<<<<<< Updated upstream
     # def update(self):
     #     # self.rect.x = self.rect.x + self.movex
     #     # def jump(self):
+=======
+    def update(self):
+
+    
+    def jump(self):
+>>>>>>> Stashed changes
 
     def draw(self, screen) -> None:
         screen.blit(self.image, self.rect)
