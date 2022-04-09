@@ -9,7 +9,3 @@ class Player(pygame.sprite.Sprite):
         self.image = pygame.image.load("ninja.bmp")
         self.rect = self.image.get_rect()
         self.image.set_colorkey((0,0,0), RLEACCEL)
-
-
-    def update(self):
-        pressed_keys = pygame.key.get_pressed()
