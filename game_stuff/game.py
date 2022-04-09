@@ -30,7 +30,6 @@ while True:
             elif i.key == pygame.K_DOWN:
                 player.rect.move_ip(0, 10)
     
-
     background: Background = Background()
 
     background.draw(display)
