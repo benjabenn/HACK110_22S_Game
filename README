@@ -1,3 +1,7 @@
 This is just the start of something great...
-HEY IM HERE, R U?????????????
-ELELE
+
+We will create a game using pygame, it will be like megaman but worse. Some highlights include:
+- Moveable character in static background
+- Able to shoot bullets/bullets shot at them
+- Can jump
+- Platforms
