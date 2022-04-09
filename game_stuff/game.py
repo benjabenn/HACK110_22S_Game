@@ -1,6 +1,7 @@
 """The start of bad-megaman"""
 
 import pygame
+import sys
 from player import Player
 
 
