@@ -15,6 +15,13 @@ while True:
         if i.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
+        elif i.type == pygame.KEYDOWN:
+            if i.key == pygame.K_LEFT:
+                play.rect.move_ip(-10, 0)
+            elif i.key == pygame.K_RIGHT:
+                play.rect.move_ip(10, 0)
+            elif i.key == pygame.K_UP:
+                play.rect.move_ip(0, 10)
     
     player: Player = Player(200, 200, 128, 128)
 
