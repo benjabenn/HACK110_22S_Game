@@ -1,7 +1,9 @@
 """The start of bad-megaman"""
 
+
 import pygame
 import sys
+from background import Background
 from player import Player
 
 
@@ -25,6 +27,9 @@ while True:
         #         play.rect.move_ip(0, 10)
     
     player: Player = Player(200, 200, 128, 128)
+    background: Background = Background()
+
+    background.draw(display)
 
     player.draw(display)
 
