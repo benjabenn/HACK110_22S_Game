@@ -11,4 +11,12 @@ class Player(pygame.sprite.Sprite):
         self.image.set_colorkey((50,50,40))
 
     # def gravity(self):
-        # self.movey +=
+        # self.movey += 3.2
+        # if self.rect.y> >
+
+    def update(self):
+        # self.rect.x = self.rect.x + self.movex
+    # def jump(self):
+
+    def draw(self, screen) -> None:
+        screen.blit(self.image, self.rect)
