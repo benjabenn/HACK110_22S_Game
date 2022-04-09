@@ -1,6 +1,7 @@
 """The start of bad-megaman"""
 
 import pygame
+from player import Player
 
 pygame.init()
 
@@ -14,6 +15,6 @@ while True:
             pygame.quit()
             sys.exit()
     
-    
+    player: Player = Player()
 
     pygame.display.update()
