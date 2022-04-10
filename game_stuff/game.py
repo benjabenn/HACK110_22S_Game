@@ -19,10 +19,12 @@ enemy_2 = Falling("game_stuff/assets/ncstate100.png")
 enemy_3 = Falling("game_stuff/assets/demon_deacon.png")
 
 pygame.mixer.music.load("game_stuff/assets/caasss.wav")
-pygame.mixer.music.play()
+pygame.mixer.music.play(-1)
 pygame.mixer.music.set_volume(1)
 
 while True:
+    clock = pygame.time.Clock()
+    clock.tick(60)
     display.fill((123, 175, 212))
     speed: int = 25
     for i in pygame.event.get():
@@ -58,12 +60,12 @@ while True:
     player.draw(display)
 
     enemy_1.draw(display)
-    enemy_1.fall(2, 3)
+    enemy_1.fall(4, 6)
 
     enemy_2.draw(display)
-    enemy_2.go_up(0, -1)
+    enemy_2.go_up(0, -4)
 
     enemy_3.draw(display)
-    enemy_3.fall(0, 3)
+    enemy_3.fall(0, 12)
 
     pygame.display.update()
