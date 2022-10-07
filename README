@@ -1,7 +1,4 @@
 This is just the start of something great...
 
-We will create a game using pygame, it will be like megaman but worse. Some highlights include:
-- Moveable character in static background
-- Able to shoot bullets/bullets shot at them
-- Can jump
-- Platforms
+We will create a game using pygame, it will be based on the UNC basketball team and its rivalries. 
+Play as the one and only TarHeel, and try to avoid those pesky other basketball teams. Stay alive for as long as you can!
